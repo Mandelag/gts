@@ -34,6 +34,7 @@ const (
 	Straight Orientation = Collinear
 )
 
+// GetOrientation get the orientation in the direction of p1 to p2
 func GetOrientation(p1, p2, p3 geom.Coord) Orientation {
 	det, detSum := SumDeterminant(p1.X(), p1.Y(), p2.X(), p2.Y(), p3.X(), p3.Y())
 
